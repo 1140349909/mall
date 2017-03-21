@@ -27,60 +27,9 @@
 
 http://127.0.0.1:8080/?uin=dev
 
-#### sit环境
-
-http://mall.sit.vveshow.com/?uin=dev
-
-http://mall.sit.vveshow.com/dev
-
 #### api入口
 http://api.sit.vveshow.com/buy/entry/dev/home/linkin
 
-
-
-* 入口
-http://api.sit.vveshow.com/buy/entry/dev/yyg/linkin?url=http://127.0.0.1:8080/#!/mall本地链接
-* 例子
-http://api.sit.vveshow.com/buy/entry/dev/yyg/linkin?url=http%3A%2F%2F127.0.0.1%3A8080%2Fmall%2F
-
-商城首页
-http://mall.sit.vveshow.com/dev#!/mall
-http://api.sit.vveshow.com/buy/entry/dev/mall/linkin
-http://mall.sit.vveshow.com/?uin=dev#!/mall
-
-一元购首页
-http://mall.sit.vveshow.com/#!/yyg
-http://api.sit.vveshow.com/buy/entry/dev/yyg/linkin
-
-
-资讯首页
-http://mall.sit.vveshow.com/#!/content/list
-http://api.sit.vveshow.com/buy/entry/dev/content/linkin
-
-会员中心
-http://mall.sit.vveshow.com/#!/member
-http://api.sit.vveshow.com/buy/entry/dev/member/linkin
-
-分销商城首页
-http://mall.sit.vveshow.com/#!/tker/product
-商城商品详情页
-http://mall.sit.vveshow.com/#!/product/show/57b41bc20f93d5223998d52f
-
-商品预览页
-http://mall.sit.vveshow.com/#!/product/preview/57b41bc20f93d5223998d52f
-
-
-
-## SIT环境配置
-* http://api.sit.vveshow.com/buy/entry/dev/mall/linkin
-
-## UAT环境配置
-* http://api.uat.vveshow.com/buy/entry/dev/mall/linkin
-
-## PRD环境配置
-* http://api.linkin.mobi/buy/entry/dev/mall/linkin
-
-## Api说明
 
 ## 排错
 ```
@@ -100,7 +49,6 @@ http://mall.sit.vveshow.com/#!/product/preview/57b41bc20f93d5223998d52f
 ```
 
 ## 严格模式下,同一个属性申明2次,在android手机中报错
-
 ## <font color="red">store操作中时，尽量必免多个返回的action操作一个state属性</font>
 ```js
 
@@ -118,7 +66,6 @@ const mutations = {
     [GET_LIST_SUCCESS](state){
         state.status = 'listSuccess';
     },
-
     [GET_PRICE_SUCCESS](state){
         state.status = 'priceSuccess';
     },

@@ -2,14 +2,13 @@
   "name": "mall",
   "version": "1.8.6",
   "description": "爆款平台",
-  "author": "asoiso",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "http://git.vveshow.com/iloka/mall.git"
+    "url": "git@github.com:wu1991924/mall.git"
   },
   "keywords": [
-    "linkin",
+    "iris",
     "admin"
   ],
   "scripts": {
