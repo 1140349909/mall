@@ -1,0 +1,73 @@
+@import "../../asset/variable";
+
+.yyg-list {
+  width: 100%;
+  overflow: hidden;
+}
+
+.yyg-list-i {
+  margin-left: auto;
+  margin-right: auto;
+  width: 315px;
+}
+
+.yyg-item {
+  position:relative;
+  float: left;
+  background: #fff;
+  padding:0;
+  width: 155px;
+  height: 192px;
+  margin-bottom: 5px;
+  .yyg-product-stat{
+    margin:0 8px;
+  }
+}
+
+.yyg-item:nth-child(odd) {
+  margin-right: 5px;
+}
+
+.yyg-item-figure {
+  text-align: center;
+  height: 96px;
+  overflow: hidden;
+}
+
+.yyg-item-figure img {
+  width: auto;
+  height: 100%;
+}
+
+.yyg-item-name {
+  height:20px;
+  line-height: 20px;
+  .font-dpr(14px);
+  padding: 8px 8px 0;
+  .text-truncate();
+}
+
+.yyg-item-credit {
+  float: left;
+}
+
+.yyg-item-surplus {
+  float: right;
+}
+
+.yyg-item-actions {
+  position:absolute;
+  left:8px;
+  bottom:8px;
+  width:139px;
+}
+
+.yyg-item-actions .weui_btn {
+  .font-dpr(12px);
+  line-height: 2em;
+}
+
+//尝试修正
+.picker-mask{
+   background: transparent;
+ }

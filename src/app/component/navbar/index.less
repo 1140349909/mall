@@ -1,0 +1,57 @@
+@import "../../asset/variable";
+
+.navbar.weui_tabbar {
+  position: fixed;
+  background: #fff;
+  height: 50px;
+  overflow: hidden;
+  &:before {
+    border-top: 1px solid #ddd;
+  }
+}
+
+.navbar {
+
+  a {
+    color: #888;
+  }
+
+  .iconfont {
+    .font-rem(24px);
+    line-height: 1.3em;
+  }
+
+  a.weui_bar_item_on, .weui_tabbar_item.weui_bar_item_on .weui_tabbar_label {
+    color: #FF5858;
+  }
+
+  .weui_tabbar_item {
+    padding: 4px 0 0;
+    text-align: center;
+  }
+
+  .weui_tabbar_icon {
+    width: 26px;
+    height: 26px;
+    overflow: hidden;
+  }
+
+  .weui_tabbar_icon img {
+    width: auto;
+    display: inline-block;
+  }
+
+  .navbar-mall .iconfont {
+    margin-left: -3px;
+  }
+
+  .navbar-yyg .iconfont{
+
+  }
+
+  .weui_tabbar_icon + .weui_tabbar_label {
+    margin-top: 0;
+  }
+}
+
+

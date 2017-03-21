@@ -1,0 +1,86 @@
+/**
+ * @Author:      Cold
+ * @DateTime:    2016-08-19 17:45:42
+ */
+@import "../../asset/variable";
+
+.address-item{
+    width:100%;
+    background-color:#fff;
+    margin-bottom:10px;
+}
+
+.address-item-wrap{
+    margin-left:auto;
+    margin-right:auto;
+    width:300px;
+}
+
+.address-item-title{
+    .font-dpr(14px);
+    line-height:42px;
+    color:#3d4245;
+}
+
+.address-item-mobile{
+    float: right;
+}
+
+.address-item-detail{
+    .font-dpr(14px);
+    line-height:18px;
+    margin-bottom:15px;
+}
+
+.address-item-control{
+    .clearfix();
+    line-height:42px;
+    height:42px;
+    border-top:1px solid #eeeeee;
+    display:table;
+    width:100%;
+}
+
+.address-item-btns{
+    float:right;
+}
+
+.address-item-btn{
+    margin-left:10px;
+    display:inline-block;
+}
+
+.address-item-btn i{
+    padding-right:2px;
+}
+
+.address-item-radio{
+    float:left;
+    line-height:42px;
+}
+
+.address-item-radio-icon{
+    vertical-align:middle;
+    display:table-cell;
+}
+
+.address-item-radio-icon i{
+    .font-dpr(21px);
+}
+
+.address-item-radio-icon i:after{
+     content: '\e651';
+}
+
+.address-item-radio-text{
+    vertical-align:middle;
+    display:table-cell;
+    padding-left:2px;
+}
+
+.address-item-radio-checked{
+    color:@brand-primary;
+}
+.address-item-radio-checked .address-item-radio-icon i:after{
+    content: '\e64f'
+}

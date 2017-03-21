@@ -1,0 +1,110 @@
+/**
+ * @Author:    Cold
+ * @DateTime:  2016-08-19 10:11:46
+ */
+@import "../../asset/variable";
+
+.app-page-passport{
+  background-color:#fff;
+}
+
+.passport-title{
+  text-align: center;
+  .font-dpr(18px);
+  margin-top:15px;
+}
+
+.passport-form{
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:20px;
+  width:280px;
+}
+
+.passport-item{
+  .clearfix();
+  position: relative;
+  width:100%;
+  height:50px;
+  line-height: 50px;
+  border-bottom:1px solid #b5b5b6
+}
+
+.passport-item-label{
+  float: left;
+  width:30px;
+  height:50px;
+}
+
+.passport-item-label i{
+  font-size:23px;
+  color:#595757;
+}
+
+.passport-item-control{
+  float: left;
+  .font-dpr(14px);
+}
+
+.passport-item-clear{
+  position:absolute;
+  right:0;
+  top:0;
+  text-align: center;
+  width:20px;
+  height:50px;
+  line-height: 50px;
+}
+
+.passport-item-clear .icon-close{
+  font-size:16px;
+  color:#8a8989;
+}
+
+.passport-item-input{
+  width:190px;
+  border:none;
+  background-color: transparent;
+  height:50px;
+  text-align: left;
+  color:#595757;
+  font-family:PingFangSC-Regular;
+}
+
+.passport-item-input::-webkit-input-placeholder{
+  color:#b5b5b6;
+}
+
+.passport-item-input.passport-item-code{
+  width:110px;
+}
+
+.passport-item-input:focus{
+  border:none;
+  outline:none;
+}
+
+.passport-item-codebtn{
+  float:right;
+}
+
+.passport-item .passport-item-codebtn button{
+  .font-dpr(14px);
+  line-height:20px;
+  padding-left:0;
+  padding-right:0;
+  width:88px;
+}
+
+.passport-form-submit{
+  margin-top:20px
+}
+
+.passport-msg{
+  margin-top:5px;
+  height:25px;
+  line-height: 25px;
+  text-align: center;
+  .font-dpr(14px);
+  color:@brand-primary;
+}

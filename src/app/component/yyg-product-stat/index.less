@@ -1,0 +1,83 @@
+@import "../../asset/variable";
+
+.yyg-product-stat {
+  display: flex;
+}
+
+.yyg-product-stat-info {
+  flex: 1;
+  padding-top: 5px;
+}
+
+.yyg-product-stat-nums {
+  .font-dpr(10px);
+  color: #b5b5b6;
+  padding-top: 3px;
+}
+
+.yyg-product-stat-nums i {
+  color: @brand-primary;
+}
+
+.yyg-product-stat-credit {
+  float: left;
+}
+
+.yyg-product-stat-surplus {
+  float: right;
+}
+
+.yyg-product-stat-numOfOwners {
+  right: 0;
+  top: 0;
+  position: absolute;
+  padding-right: 3px;
+  width: 50px;
+  height: 46.5px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('./img/backcolor@2x.png');
+  color: #fff;
+  strong {
+    line-height: 1em;
+    display: block;
+    font-weight: normal;
+    .font-dpr(18px);
+  }
+
+  .yyg-product-stat-h2 {
+    font-family: PingFangSC-Regular;
+    .font-dpr(10px);
+    color: #ffffff;
+    text-align: right;
+  }
+
+  .yyg-product-stat-number {
+    margin-top: -8px;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    text-align: right;
+    color: #ffffff;
+  }
+
+  .yyg-product-stat-min {
+    margin-top: 0;
+    padding-right: 0;
+    text-align: right;
+    line-height: 16px;
+    font-size: 16px;
+  }
+
+  .yyg-product-stat-triangle {
+    position: absolute;
+    width: 35px;
+    height: 31px;
+    left: 15px;
+    top: 7px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('./img/triangle@2x.png');
+  }
+}

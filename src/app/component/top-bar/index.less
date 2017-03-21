@@ -1,0 +1,74 @@
+/**
+ * @Author:      Cold
+ * @DateTime:    2016-10-10 15:01:28
+ */
+
+@import "../../asset/variable";
+
+.top-bar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    height: 45px;
+    line-height: 45px;
+    color: #595757;
+    .clearfix();
+    background: linear-gradient(top , rgb(248, 245, 245) , rgb(248, 248, 248) 100%);
+    background: -o-linear-gradient(top , rgb(248, 245, 245) , rgb(248, 248, 248) 100%);
+    background: -ms-linear-gradient(top , rgb(248, 245, 245) , rgb(248, 248, 248) 100%);
+    background: -moz-linear-gradient(top , rgb(248, 245, 245) , rgb(248, 248, 248) 100%);
+    background: -webkit-linear-gradient(top , rgb(248, 245, 245) , rgb(248, 248, 248) 100%);
+    border-bottom:1px solid #e5e5e5;
+    -moz-box-shadow:0px 1px 3px #EBEBEB;
+    -webkit-box-shadow:0px 1px 3px #EBEBEB;
+    box-shadow:0px 1px 3px #EBEBEB;
+}
+
+.top-bar-back{
+    position: absolute;
+    left:10px;
+    .clearfix();
+    text-align: center;
+    font-weight: 100;
+}
+
+.top-bar-back .iconfont{
+    .font-dpr(16px);
+}
+
+.top-bar-back .iconfont:active{
+    color:#b2b2b2;
+}
+
+.top-bar-backtext{
+    margin-left:-5px;
+}
+
+.top-bar-title{
+    margin-left:88px;
+    margin-right:88px;
+    line-height: 45px;
+    text-align: center;
+    height: 45px;
+    font-weight: bold;
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    .font-dpr(16px);
+}
+
+.top-bar-other{
+    position: absolute;
+    top:0;
+    right:10px;
+    display: block;
+    line-height: 45px;
+    color: #ccc;
+}
+
+.top-bar-other .iconfont{
+    font-size: 24px;
+}

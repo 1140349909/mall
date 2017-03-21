@@ -1,0 +1,88 @@
+@import "./variable";
+
+// 进度条
+.weui_progress_bar {
+    height: 4px;
+    background: #E5E5E5;
+    border-radius: 4px;
+}
+
+.weui_progress_inner_bar {
+    border-radius: 4px;
+    .gradient();
+}
+
+// 通用期号产品
+.issue {
+    background: #fff;
+    padding: 8px;
+}
+
+.issue-content {
+    display: flex;
+}
+
+.issue-aside {
+    position: relative;
+    flex: 1;
+    min-height: 68px;
+}
+
+.issue-extra {
+
+}
+
+.issue-footer {
+    border-top: 1px solid #e3e3e3;
+    margin-top: 8px;
+}
+
+.issue-figure {
+    width: 108px;
+    height: 72px;
+    margin-right: 8px;
+    overflow: hidden;
+    text-align: center;
+    img {
+        height: 100%;
+    }
+}
+
+.issue-name {
+    .font-dpr(14px);
+    line-height: 1.4em;
+    margin-bottom: 4px;
+    .label {
+        margin-right: 3px;
+    }
+}
+
+.issue-detail {
+    line-height: 1.4em;
+    color: #b5b5b6;
+}
+
+.issue {
+    .product-stat-info {
+        padding-top: 5px;
+    }
+}
+
+.issue-fixed {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.issue-ticket {
+    h6 {
+        padding: 6px 0;
+        color: #b5b5b6;
+    }
+    li {
+        width: 32%;
+        text-align: center;
+        display: inline-block;
+        color: @brand-primary;
+    }
+}

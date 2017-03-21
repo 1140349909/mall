@@ -1,0 +1,208 @@
+@import "../../asset/variable";
+.content-list{
+	background-color:#fff;
+}
+
+.content-item{
+	height:60px;
+	background-color:#fff;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-bottom:1px solid #e6e6e6;
+	zoom:1;
+}
+
+// 图片右对齐布局
+.content-list.content-list-coverright .content-item-img{
+	float:right;
+}
+
+.content-list.content-list-coverright .content-item-container{
+	padding-right:10px;
+	padding-left:0;
+}
+
+.content-list.content-list-coverright .content-item-date {
+}
+
+.content-list.content-list-coverright .content-item-traffic {
+}
+// 图片右对齐布局END
+
+
+// 卡片式布局
+.content-list.content-list-cardcover .content-item{
+	padding:5px;
+	width:145px;
+	height:204px;
+	margin-bottom:10px;
+	border-bottom:none;
+	float:left;
+}
+
+.content-list.content-list-cardcover .content-item:nth-child(even){
+	margin-left:10px;
+}
+
+.content-list.content-list-cardcover .content-item-container {
+	width:100%;
+	padding-left:0;
+}
+
+.content-list.content-list-cardcover .content-item-title {
+	color:#333;
+	padding-top:5px;
+	line-height:15px;
+	height:15px;
+	overflow:hidden;
+}
+
+.content-list.content-list-cardcover .content-item-digest{
+	line-height:15px;
+	height:15px;
+	overflow:hidden;
+}
+
+.content-list.content-list-cardcover .content-box{
+	width:320px;
+}
+
+.content-list.content-list-cardcover .content-item-img{
+	width:145px;
+	height:145px;
+}
+
+.content-list-cardcover.content-list{
+	background-color:#f7f7f8;
+}
+
+.content-list.content-list-cardcover .content-item-info{
+	margin-top:5px;
+}
+
+// 卡片式布局END
+//
+.content-item-digest{
+	height:26px;
+	line-height:14px;
+	margin-top:5px;
+	color:#898989;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+.content-item:last-child{
+	border-bottom:none;
+}
+
+.content-box{
+	margin-left:auto;
+	margin-right:auto;
+	width:300px;
+	zoom:1;
+}
+
+.content-box:after{
+	height: 0;
+  clear: both;
+  overflow: visible;
+  display: block;
+  content: "";
+}
+
+
+.content-item:after{
+  height: 0;
+  clear: both;
+  overflow: visible;
+  display: block;
+  content: "";
+}
+
+.content-item-img{
+	display: block;
+	float: left;
+	text-align: center;
+	width:60px;
+	height:60px;
+	overflow:hidden;
+}
+
+.content-item-container{
+	width:230px;
+	padding-left:10px;
+	float: left;
+}
+
+.content-item-title{
+	line-height:16px;
+	.font-dpr(16px);
+	color:#595757;
+	display:block;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+.content-item-info{
+	margin-top:-1px;
+	zoom:1;
+	color:#898989;
+}
+
+.content-item-info:after{
+	height: 0;
+	clear: both;
+	overflow: visible;
+	display: block;
+	content: "";
+}
+
+.content-item-date{
+	float:left;
+	line-height:20px;
+	.font-dpr(12px);
+	font-family: 'PingFang SC', 'Helvetica Neue', Helvetica, STHeiTi, sans-serif;
+}
+
+.content-item-author{
+	float:left;
+	margin-left:8px;
+	line-height:20px;
+	.font-dpr(12px);
+}
+
+.content-item-traffic{
+	float:right;
+	.font-dpr(12px);
+}
+
+.content-item-traffic .iconfont{
+	vertical-align: middle;
+	height:20px;
+	line-height:18px;
+}
+
+.content-item-pv{
+	margin-left:3px;
+	height:20px;
+	line-height:20px;
+	display:inline-block;
+}
+
+
+.coupon-empty{
+	margin-top:85px;
+	text-align:center;
+	color:#b4b4b5;
+}
+
+.coupon-empty .icon-coupon{
+	font-size:64px;
+	line-height:64px;
+}
+
+.coupon-empty p{
+	margin-top:-2px;
+	.font-dpr(14px);
+}

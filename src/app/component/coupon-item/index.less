@@ -1,0 +1,132 @@
+@import "../../asset/variable";
+.coupon-item{
+	position:relative;
+	margin-bottom:12px;
+	margin-left:auto;
+	margin-right:auto;
+	width:300px;
+	height:80px;
+	background-image:url('./img/back2.png');
+	background-size:100%;
+	background-color:#fff;
+	background-position:center;
+	background-repeat: no-repeat;
+	border-radius:6px;
+	-webkit-box-shadow:0px 1px 5px 0px rgba(0,0,0,0.33);
+	-moz-box-shadow:0px 1px 5px 0px rgba(0,0,0,0.33);
+	box-shadow:0px 1px 5px 0px rgba(0,0,0,0.33);
+}
+.coupon-item.coupon-item-cash .coupon-item-l,
+.coupon-item.coupon-item-cash .coupon-item-r,
+.coupon-item.coupon-item-used .coupon-item-l,
+.coupon-item.coupon-item-used .coupon-item-r,
+.coupon-item.coupon-item-invalid .coupon-item-l,
+.coupon-item.coupon-item-invalid .coupon-item-r{
+	color:#b5b5b6;
+}
+
+.coupon-item.coupon-item-cash,
+.coupon-item.coupon-item-used,
+.coupon-item.coupon-item-invalid{
+	background-image:url('./img/back.png');
+}
+
+.coupon-item.coupon-item-used .coupon-item-icon{
+	background-image:url('./img/used.png');
+}
+
+.coupon-item.coupon-item-invalid .coupon-item-icon{
+	background-image:url('./img/invalid.png');
+}
+
+.coupon-item.coupon-item-cash .coupon-item-icon{
+	background-image:url('./img/cash.png');
+}
+
+
+
+.coupon-item.coupon-item-disabled{
+	opacity: 0.5;
+}
+
+.coupon-item-icon{
+	right:55px;
+	top:10px;
+	width:66px;
+	height:53px;
+	position:absolute;
+	background-size:100%;
+	background-position:center;
+	background-repeat: no-repeat;
+}
+
+.coupon-item-l{
+	float:left;
+	padding-top:15px;
+	padding-left:20px;
+	width:80px;
+	color:@brand-primary
+}
+
+.coupon-item-face{
+	height:30px;
+	font-family: 'PingFang SC', 'Helvetica Neue', Helvetica, STHeiTi, sans-serif;
+}
+.coupon-item-money{
+	display:inline-block;
+	.font-dpr(12px);
+}
+
+.coupon-item-facevalue{
+	margin-left:-5px;
+	display:inline-block;
+	.font-dpr(21px);
+}
+
+.coupon-item-px{
+	line-height:35px;
+}
+
+.coupon-item-tip{
+	margin-top:-1px;
+	text-align:left;
+}
+
+.coupon-item-border{
+	border-top:1px dashed rgba(150,150,150,0.35);
+	width:130.5px;
+	height:1px;
+}
+
+.coupon-item-r{
+	float:left;
+	color:#898989;
+}
+
+.coupon-item-info{
+	height:31px;
+	padding-top:10px;
+	padding-bottom:5px;
+}
+
+.coupon-item-date{
+	padding-top:4px;
+}
+
+.coupon-item-radio{
+	display:block;
+	position:absolute;
+	right:7px;
+	top:7px;
+	width:20px;
+	height:20px;
+}
+
+.coupon-item-discount{
+	line-height:20px;
+	margin-left: -2px;
+}
+
+.coupon-item-facediscount{
+	margin-left:0;
+}

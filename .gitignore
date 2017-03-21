@@ -18,7 +18,12 @@ out/
 node_modules/
 .sass-cache/
 tmp/
-/build/
 /dist/
 /archive/
-abc
+/dest/
+/demo/
+/demo-dist/
+/vue-router/
+/vue-vuex/
+/vuex-tutorial/
+/src/advanced/

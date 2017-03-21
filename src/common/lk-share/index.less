@@ -1,0 +1,139 @@
+@import "../../app/asset/variable";
+
+
+.lk-share-detect-info {
+    background: none;
+}
+
+.lk-share-all-mask {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    tap-highlight-color: transparent;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.lk-share-all-actionsheet {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 0.03125rem solid #CCCCCC;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.lk-share-all-item {
+    position: relative;
+    width: 25%;
+    display: inline-block;
+    padding-top: 0;
+    height: 80px;
+    box-sizing: border-box;
+    i {
+        display: inline-block;
+        position: absolute;
+        font-size: 12px;
+        bottom: 5px;
+        text-align: center;
+        width: 100%;
+        left: 0
+    }
+}
+
+.lk-share-all {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    a.bds_weixin, a.bds_weixin_zone, a.bds_qzone, a.bds_tsina {
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    a.sprite-friend {
+        background-image: url("img/friend.png");
+    }
+
+    a.bds_weixin_zone {
+        background-image: url("img/wechat.png");
+    }
+
+    a.bds_qzone {
+        background-image: url("img/qzone.png");
+    }
+
+    a.bds_tsina {
+        background-image: url("img/sina.png");
+    }
+
+}
+
+.lk-share-wechat {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.6) url('img/share.png') no-repeat top center;
+    background-size: 100%;
+}
+
+.lk-share-wechat-qrcode {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.lk-share-wechat-info {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #FFFFFF;
+    p {
+        margin: 30px auto 20px auto;
+        font-weight:bold;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+    .lk-botDesc {
+        font-size:14px;
+        width: 200px;
+        text-align: left;
+        margin-top:10px;
+        font-weight:normal;
+    }
+}
+
+.lk-share-known-btn {
+    display: block;
+    border: 2px solid #FFFFFF;
+    margin: 20px auto;
+    width: 130px;
+}
+

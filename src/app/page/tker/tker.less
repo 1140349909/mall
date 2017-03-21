@@ -1,0 +1,81 @@
+@import "../../asset/variable";
+// 分销公用样式
+.tker-header {
+  position: relative;
+  background-image: url('./img/tker-header.png'), linear-gradient(top, #fc9d48, #ff3a1e);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+}
+
+.tker-header-items {
+  height: 60px;
+  padding: 30px 10px 0;
+  display: -webkit-box;
+}
+
+.tker-header-item, .tker-header-action {
+  text-align: center;
+  flex: 1;
+  color: #fff;
+  .unit {
+    color: #fff;
+  }
+}
+
+.tker-header-action {
+  -webkit-flex: 1;
+  padding-top: 24px;
+}
+
+a.tker-header-link {
+  color: #fff;
+  display: inline-block;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  width: 62px;
+  height: 18px;
+  line-height: 18px;
+}
+
+.tker-header-dt {
+  display: block;
+}
+
+.tker-header-dd {
+  display: block;
+  .font-dpr(22px);
+}
+
+.tker-header-qk {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  a {
+    color: @gray;
+  }
+  .iconfont {
+    vertical-align: middle;
+  }
+}
+
+.tker-header-bar {
+  padding: 10px 0;
+  margin: 0 14px;
+  height: 28px;
+  line-height: 28px;
+  border-top: 1px solid #f3f3f3;
+  .clearfix();
+}
+
+.tker-header-bar-l {
+  float: left;
+  color: @gray-light;
+}
+
+.tker-header-bar-r {
+  float: right;
+  .weui_btn {
+    width: 85px;
+  }
+}

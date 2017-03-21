@@ -1,0 +1,226 @@
+@import "../../asset/variable";
+// employee-code employee-index employee-rank.html recharge-result.html? yyg-award-2.html?
+.page-employee-rank {
+  background: #f7f7f7;
+}
+
+.employee-rank-box{
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:999;
+}
+
+//ranking-list css styles
+.employee-rank-summary {
+  // position:fixed;
+  // top:0;
+  // left:0;
+  height:93.5px;
+  width:320px;
+  .font-dpr(12px);
+  .colorFFF();
+  // padding: 12.5px) 12.5px) 22.5px) 15px);
+  background-image: url('./img/summary.png');
+  background-size:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f2f3f2;
+
+}
+
+.employee-rank-summary-label{
+  position:absolute;
+  top:13px;
+  left:10px;
+  width:115px;
+  height:70px;
+  padding-left:40px
+}
+
+.employee-rank-summary-label i{
+  position:absolute;
+  font-size:38px;
+  color:#bc311c;
+  top:5px;
+  left:0;
+}
+
+.employee-rank-summary-label2{
+  text-align: center;
+  position:absolute;
+  top:8px;
+  right:100px;
+  width:35px;
+  height:65px;
+}
+
+.employee-rank-summary-label3{
+  text-align: center;
+  position:absolute;
+  top:8px;
+  right:30px;
+  width:35px;
+  height:65px;
+}
+
+.employee-rank-summary-label2 i, .employee-rank-summary-label3 i{
+  display: block;
+  height:35px;
+  .font-dpr(30px);
+  color:#e84028;
+}
+
+.employee-rank-summary-em{
+  .font-dpr(20px);
+  line-height: 24px;
+}
+
+
+.employee-rank-summary-mp em{
+    .font-dpr(26px);
+    line-height: 35px;
+}
+
+.employee-rank-summary-tiem{
+  .font-dpr(12px);
+  font-weight: 100;
+}
+
+.employee-rank-summary-val em {
+  .font-dpr(24px);
+}
+
+.employee-rank-tabs-content{
+  height:100%;
+}
+
+.employee-rank-itemfixed{
+  position: fixed;
+  background-color:#f7f7f7 !important;
+}
+
+.employee-rank-item {
+  background-color:#fff;
+  height:38px;
+  border-bottom: 1px solid #E5E5E5;
+  .font-dpr(14px);
+  padding: 12px 12.5px;
+  position: relative;
+  padding-left: 140px;
+}
+
+.employee-rank-item .employee-rank-item-num, .employee-rank-item-numfixed {
+  .font-dpr(16px);
+  color:#e84027;
+  width: 22px;
+  height: 59px;
+  line-height: 59px;
+  position: absolute;
+  left: 12.5px;
+  top:0;
+  text-align: center;
+}
+
+.employee-rank-item-headimg{
+    position:absolute;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    left:70px;
+    overflow: hidden;
+}
+
+.employee-rank-item-headimg img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.employee-rank-item:first-child .employee-rank-item-num{
+  overflow: hidden;
+  background: url(./img/paihang_03.png) no-repeat center center;
+  background-size: cover;
+  width: 28px;
+  height: 42px;
+  position: absolute;
+  left: 12.5px;
+  top: 0;
+  color:#fff;
+}
+
+.employee-rank-item:nth-child(2) .employee-rank-item-num {
+  overflow: hidden;
+  content: "";
+  background: url(./img/paihang_06.png) no-repeat center center;
+  background-size: cover;
+  width: 28px;
+  height: 42px;
+  position: absolute;
+  left: 12.5px;
+  top: 0;
+  color:#fff;
+}
+
+.employee-rank-item:nth-child(3) .employee-rank-item-num {
+  overflow: hidden;
+  background: url(./img/paihang_08.png) no-repeat center center;
+  background-size: cover;
+  width: 28px;
+  height: 42px;
+  position: absolute;
+  left: 12.5px;
+  top: 0;
+  color:#fff;
+}
+
+.employee-rank-item:last-child {
+  border-bottom: 0;
+}
+
+.employee-rank-item em {
+  display: block;
+}
+
+.employee-rank-item-sum {
+  position: absolute;
+  top: 12px;
+  right: 12.5px;
+  text-align: right;
+  width: 100px;
+}
+
+.employee-rank-item-name {
+  .color3();
+}
+
+.employee-rank-item-company {
+  .font-dpr(12px);
+  .color6();
+}
+
+.employee-rank-item-count {
+  margin-top:10px;
+  .font-dpr(12px);
+  .color3();
+}
+
+.employee-rank-item-pcount {
+  .font-dpr(12px);
+  .color3();
+}
+
+.employee-rank-scroller{
+    margin-top:200px
+}
+
+.page-employee-rank{
+  overflow-y:hidden
+}
+
+
+
+
+
+

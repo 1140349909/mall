@@ -1,0 +1,277 @@
+@import "./variable";
+
+html, body {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+body {
+    font-size: 12px;
+    color: #595957;
+    background: #f7f7f8;
+    font-family: -apple-system-font, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+    /*指鼠标在链接*/
+}
+
+.clear {
+    float: none;
+    clear: both;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+// label
+.label {
+    display: inline-block;
+}
+
+.label-primary {
+    border: 1px solid @brand-primary;
+    border-radius: 4px;
+    color: @brand-primary;
+    padding: 1px 5px;
+    line-height: 1em;
+    .font-dpr(12px);
+}
+
+// text
+.text-primary {
+    color: @brand-primary;
+}
+
+// 全局文章标题
+.post-title, h1.post-title {
+    .font-dpr(16px);
+    box-sizing: content-box;
+    width: 197px;
+    height: 27px;
+    overflow: hidden;
+    padding-top: 14.5px;
+    margin: 0 auto 20px;
+    color: #ffffff;
+    text-align: center;
+    background: url(./img/post-title.png) no-repeat top center;
+    background-size: 100%;
+}
+
+// 全局单元格的字体大小设置为14px
+.weui_cells {
+    .font-dpr(14px);
+}
+
+.weui_cells_fix {
+    .weui_cells:first-child {
+        margin-top: 0;
+        &:before {
+            border-top: 0;
+        }
+    }
+}
+
+.weui_btn {
+    .font-dpr(16px);
+}
+
+/* 按钮风格设置 */
+.weui_btn_default:not(.weui_btn_disabled):active {
+    color: #595957;
+    background-color: #fff;
+}
+
+.weui_btn_disabled.weui_btn_default {
+    background-color: #f7f7f7;
+}
+
+.weui_btn_plain_default {
+    color: #595957;
+    border-color: #595957;
+}
+
+.weui_btn_disabled.weui_btn_default {
+    border-color: #e5e5e5;
+}
+
+.weui_btn_primary {
+    background-color: @brand-primary;
+}
+
+.weui_btn_primary:not(.weui_btn_disabled):active {
+    color: #fff;
+    background-color: #b82f1b;
+}
+
+.weui_btn_primary.weui_btn_disabled {
+    background-color: #b5b5b6;
+}
+
+.weui_btn_plain_primary.weui_btn_disabled {
+    background-color: #f7f7f7;
+    color: #c9c9c9;
+    border-color: #e5e5e5;
+}
+
+.weui_btn_plain_primary {
+    color: @brand-primary;
+    border-color: @brand-primary;
+}
+
+.weui_btn_plain_primary:active {
+    border-color: #b82f1b;
+}
+
+/* 对话框颜色 */
+.weui_btn_dialog.primary {
+    color: @brand-primary;
+}
+
+// 单元格描述字体修改
+.vux-label-desc {
+    color: #b5b5b6;
+    .font-dpr(12px);
+}
+
+// 数字选择框
+.vux-number-selector, .vux-popup-picker-header {
+    color: @brand-primary;
+}
+
+.vux-number-input {
+    .font-dpr(16px);
+}
+
+// 轮播图的小圆点颜色
+.vux-slider .vux-indicator-right > a > .vux-icon-dot.active, .vux-slider > .vux-indicator > a > .vux-icon-dot.active {
+    background-color: @brand-primary;
+}
+
+// 关闭按钮
+.vux-close {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    color: #ccc;
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        background: #98979d;
+    }
+    &::before {
+        transform: rotate(45deg);
+    }
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
+
+// 开关
+.weui_switch:checked {
+    background-color: #FF3A1D;
+    border-color: #FF3A1D;
+}
+
+.vux-slider > .vux-swiper > .vux-swiper-item > a > .vux-swiper-desc {
+    background-image: none
+}
+
+// 日期选择文字
+.dp-header .dp-item {
+    color: #ea5035;
+}
+
+.vux-spinner-android {
+    stroke: #fff;
+}
+
+.vux-spinner-ios {
+    stroke: #fff;
+}
+
+// 弹出mask,去除过渡效果
+.vux-popup-mask {
+    transition: none;
+}
+
+.weui_dialog_alert .weui_mask {
+    z-index: 199;
+}
+
+.weui_dialog {
+    z-index: 200;
+}
+
+// .weui_toast {
+//     width: auto !important;
+//     padding: 0 10px);
+// }
+
+// toast组件，文本提示定义高度
+.vux-toast .weui_toast_text .weui_toast_content {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.vux-toast .weui_toast_text .weui_icon_toast {
+    display: none;
+}
+
+.vux-toast .weui_toast_text {
+    height: 35px;
+    line-height: 35px;
+    min-height: inherit;
+    width: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+html .weui_loading_toast .weui_toast_content {
+    margin-top: 77%
+}
+
+.fade-transition {
+    transition: opacity .3s ease;
+}
+
+.fade-enter, .fade-leave {
+    opacity: 0;
+}
+
+.weui_cells .with_arrow:after {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 12px;
+    content: "\e647";
+    display: inline-block;
+    transform: none;
+    margin-top: 4px;
+    border: none;
+    position: relative;
+    margin-left: .3em;
+    color: #c8c8cd
+}
+
+
+.router-top-bar {
+    margin-top: 45px !important;
+}

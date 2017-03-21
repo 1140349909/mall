@@ -1,0 +1,274 @@
+@import "../../asset/variable";
+
+/**
+ * 框架布局
+ */
+
+/*
+<div class="app app-iloka">
+    <div class="page page-index">
+        <header class="header">
+            <span class="header-r">右边操作</span>
+            <span class="header-c">页面标题</span>
+            <span class="header-l">左边操作</span>
+        </header>
+        <section class="content">
+            <div class="aside"></div>
+            <div class="main-w">
+                <div class="main">
+                    <div class="main-i">
+                        <div class="main-t">
+                            <div class="main-tl"></div>
+                            <div class="main-tc"></div>
+                            <div class="main-tr"></div>
+                        </div>
+                        <div class="main-m">
+                            <div class="main-ml"></div>
+                            <div class="main-mc"></div>
+                            <div class="main-mr"></div>
+                        </div>
+                        <div class="main-b">
+                            <div class="main-bl"></div>
+                            <div class="main-bc"></div>
+                            <div class="main-br"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="extra"></div>
+        </section>
+        <footer class="footer"></footer>
+    </div>
+</div>
+*/
+
+.app-lock,
+.app-lock body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.app-error {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    top: 40%;
+    text-align: center;
+    color: #888;
+}
+
+.app-loading-more {
+    line-height: 1.5em;
+    text-align: center;
+    margin-top: -40px;
+    padding-bottom: 60px;
+}
+
+/*微信平台*/
+.app-wechat {
+
+}
+
+/*wap版本*/
+.app-wap {
+
+}
+
+/*App*/
+.app-app {
+
+}
+
+.app-app .header {
+    display: none;;
+}
+
+.app-app .content {
+    padding-top: 0;
+}
+
+/*安卓版本*/
+.app-ard {
+
+}
+
+/*ios版本*/
+.app-ios {
+
+}
+
+/* 业务平台 */
+.app-linkin {
+
+}
+
+/* */
+.app-iloka {
+
+}
+
+/* 页面 */
+.page {
+    // -webkit-overflow-scrolling: touch;
+}
+
+/* 首页类型 */
+.page-index {
+    padding-bottom: 50px;
+}
+
+/* 通用子页面类型,有底部导航 */
+.page-sub {
+    padding-bottom: 50px;
+}
+
+/* 全屏类型,无底部导航 */
+.page-full {
+
+}
+
+.page.active {
+    display: block;
+}
+
+.app-header {
+    position: relative;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    height: 44px;
+    padding: 0 10px;
+    line-height: 24px;
+    border-bottom: 1px solid #F8F8F8;
+    background-color: #F8F8F8;
+    color: #fff;
+    backface-visibility: hidden;
+
+    h1 {
+        color: #666 !important;
+    }
+
+    .vux-header-left .vux-header-back:before {
+        color: #666;
+    }
+}
+
+.app-header a {
+    color: #FF6E40;
+}
+
+.app-header .header-l,
+.app-header .header-r {
+    position: absolute;
+    top: 10px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.app-header .header-l {
+    left: 10px;
+}
+
+.app-header .header-r {
+    right: 10px;
+}
+
+.page-title {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0 -10px;
+    .font-dpr(16px);
+    font-weight: 500;
+    line-height: 44px;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #F8F8F8;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.page-empty {
+    text-align: center;
+    padding: 50px 10px;
+    color: #999;
+}
+
+.page .footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.page .footer .navbar {
+    position: relative;
+}
+
+.page .footer-l {
+    float: left;
+}
+
+.page .footer-r {
+    float: right;
+}
+
+/* 页面 通栏按钮 */
+.page-actions {
+    padding: 8px;
+}
+
+/* 页面底部 通栏按钮 */
+.page-actions-fix {
+    background: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.page-actions-flex {
+    display: -webkit-box;
+}
+
+// 竖线分隔
+.page-actions-sp {
+    border-right: 1px solid #ddd;
+    width: 0px;
+    margin: 1px 12px 1px 0;
+}
+
+// 左边
+.page-actions-extra {
+    margin-right: 20px;
+}
+
+.page-actions-item {
+    margin-right: 12px;
+    a {
+        display: inline-block;
+        text-align: center;
+        color: #898989;
+        line-height: 1em;
+        .icon {
+            font-size: 24px;
+            line-height: 1em;
+            display: block;
+        }
+    }
+    &:first-child {
+        margin-left: 6px;
+    }
+}
+
+// 右边
+.page-actions-aside {
+    //margin-left: 6px;
+    -webkit-box-flex: 1;
+    .weui_btn {
+        .font-dpr(18px);
+    }
+}

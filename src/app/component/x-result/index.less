@@ -1,0 +1,46 @@
+@import "../../asset/variable";
+
+.x-result {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+// 垂直居中
+.x-result-vertical {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    .trans50();
+    z-index: 100;
+}
+// 水平居中
+.x-result-horizontal {
+    text-align: center;
+    z-index: 100;
+    padding: 25% 0;
+}
+
+.x-result-title {
+    font-size: 22px;
+    padding: 5px 10px 0;
+}
+
+.x-result-content {
+    font-size: 12px;
+    color: #aeafaf;
+}
+
+.x-result-button {
+    padding: 15px 10px;
+}
+
+.x-result-icon {
+    margin-bottom:.5rem;
+    height:2.5rem;
+    line-height: 2.5rem;
+    .iconfont {
+        .font-rem(72px);
+        color: #999;
+    }
+}

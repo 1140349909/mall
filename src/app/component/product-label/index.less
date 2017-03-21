@@ -1,0 +1,56 @@
+@import "../../asset/variable";
+
+.product-label {
+  display: inline-block;
+  line-height: 14px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.product-label.product-label-normal {
+  color: @brand-primary;
+  border-color: @brand-primary;
+}
+
+// 颜色样式颜色
+.product-label.product-label-cash {
+  color: @brand-primary;
+  border-color: @brand-primary;
+}
+
+.product-label.product-label-coupon {
+  color: #82bc00;
+  border-color: #82bc00;
+}
+
+.product-label.product-label-integral {
+  color: #00bfd6;
+  border-color: #00bfd6;
+}
+
+.product-label.product-label-integralCash {
+  color: #da3ab3;
+  border-color: #da3ab3;
+}
+
+.product-label.product-label-offset {
+  color: #ff9012;
+  border-color: #ff9012;
+}
+
+// 标签大小
+.product-label.product-label-small {
+  .font-dpr(10px);
+}
+
+.product-label.product-label-normal {
+  .font-dpr(12px);
+}
+
+.product-label.product-label-big {
+  .font-dpr(14px);
+}

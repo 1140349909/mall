@@ -1,0 +1,123 @@
+@import "../../asset/variable";
+
+.vcard-bg {
+  background: url("./img/bg.png") 0 0 no-repeat;
+  position: relative;
+  background-size: contain;
+  height: 311.5px;
+}
+
+.vcard-header {
+  width: 99%;
+  height: 84.5px;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.vcard-header-text {
+  width: 155px;
+  position: absolute;
+  left: 17px;
+  top: 11px;
+}
+
+.vcard-header-qrcode{
+  position: absolute;
+  right: 17px;
+  bottom: 0;
+  width: 80px;
+}
+
+.vcard-header-qrcode img {
+  width: 100%;
+  height: auto
+}
+
+.vcard-header-qrcode-div{
+  position: absolute;
+  .font-dpr(10px);
+  background: #6f7075;
+  line-height: 14px;
+  text-align: center;
+  color: white;
+  width: 100%;
+
+}
+
+.vcard-title-name {
+  .font-dpr(17px);
+  color: white;
+}
+
+.vcard-title-position {
+  .font-dpr(12px);
+  color: #cbcbcb;
+}
+
+.vcard-body {
+  position: absolute;
+  top: 84.5px;
+  width: 99%;
+}
+
+.vcard-body-bg {
+  background: url('./img/shade.png') 0 0 no-repeat;
+  background-size: cover;
+  width: 99%;
+  height: 300px;
+}
+
+.vcard-body-logo {
+  height: 50px;
+  margin: 10px 15px;
+
+}
+
+.vcard-body-logo img {
+  width: 50px;
+  height: inherit;
+}
+
+.vcard-body-text {
+  margin: 5px 15px;
+  .font-dpr(12px);
+}
+
+.vcard-body-text i{
+  .font-dpr(16px);
+  vertical-align: middle;
+}
+
+.vcard-body-text img {
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+}
+
+.vcard-body-text p {
+  line-height: 24px;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.vcard-footer {
+  position: absolute;
+  bottom: 20px;
+  width: 99%;
+  height: 50px;
+}
+
+.vcard-footer-text {
+  margin: 15px;
+  .font-dpr(11px);
+  text-align: center;
+  color: #b5b6b6;
+}
+
+.vcard-button-footer {
+  padding: 15px;
+  border-top: 1px solid #d4d4d4;
+}
+

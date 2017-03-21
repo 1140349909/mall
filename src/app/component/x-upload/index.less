@@ -1,0 +1,40 @@
+@import "../../asset/variable";
+.vux-popup-dialog {
+  z-index: 999;
+}
+.x-upload {
+  width:100%;
+  min-height:100%;
+  background: #FFFFFF;
+  padding: 5%;
+  box-sizing: border-box;
+
+  .imgContainer{
+    margin:0 20px 80px ;
+    .showImg{
+      border:1px dashed #c7c7c7;
+      height:200px;
+      position: relative;
+      overflow: hidden;
+      #image {
+        position: absolute;
+        top:50%;
+        left:50%;
+        .trans50();
+      }
+    }
+    .desc {
+      padding:10px ;
+      text-align: center;
+    }
+  }
+  .weui_btn_primary {
+    background: #04be02;
+    font-size:14px;
+  }
+  .buttonsList {
+    position: absolute;
+    bottom: 30px;
+    width:90%;
+  }
+}

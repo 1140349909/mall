@@ -1,0 +1,53 @@
+@import "../../asset/variable";
+
+.tker-user-list {
+  margin-top: 10px;
+  background: #fff;
+  li {
+    display: flex;
+    margin: 0 15px;
+    padding: 10px 0;
+    height: 40px;
+    border-bottom: 1px solid #f3f3f3;
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
+
+.tker-user-figure {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 10px;
+  img {
+    height: 100%;
+    border-radius: 100%;
+  }
+}
+
+.tker-user-name {
+  flex: 1;
+  line-height: 40px;
+  .font-dpr(13px);
+  .text-truncate();
+}
+
+.tker-user-extra {
+  width: 120px;
+  overflow: hidden;
+  text-align: right;
+}
+
+.tker-user-money {
+  display: block;
+  line-height: 1em;
+  color: @brand-primary;
+  .font-dpr(22px);
+}
+
+.tker-user-desc {
+  display: block;
+  color: #b5b5b6;
+  .font-dpr(10px);
+}

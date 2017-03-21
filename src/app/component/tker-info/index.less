@@ -1,0 +1,34 @@
+@import "../../asset/variable";
+// 如何分销
+.tker-info {
+    padding: 20px;
+    h3 {
+        .font-dpr(14px);
+        color: #595757;
+        padding: 10px 0 5px;
+        &:before {
+            display: inline-block;
+            content: "";
+            margin-left: -10px;
+            margin-right: 5px;
+            background: @brand-primary;
+            width: 9px;
+            height: 9px;
+            border-radius: 100%;
+        }
+    }
+    p {
+        .font-dpr(12px);
+        text-indent: 1.5em;
+        color: #898989;
+        padding: 0 5px 3px;
+    }
+}
+
+.tker-info-figure {
+    margin: 10px 0;
+    text-align: center;
+    img {
+        width: 88%;
+    }
+}
